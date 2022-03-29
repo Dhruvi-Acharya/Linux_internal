@@ -27,9 +27,9 @@ int main(void)
 		printf("thread is created\n");
 	}
 
-	while(1);
-	exit(0);
-//	sleep(2);
+	//while(1);
+	//exit(0);
+	sleep(2);
 	//pthread_join(tid,NULL); //make parent to wait to execute 
 	return 0;
 }

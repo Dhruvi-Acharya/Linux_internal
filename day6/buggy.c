@@ -5,7 +5,7 @@ void buggyy()
 {
 	int *intptr;
 	int i;
-	intptr = (int *)malloc(sizeof(int)*5);
+	intptr = (int *)malloc(sizeof(int)*5); //allocating 20 bytes
 
 	printf("MALLOC checking: Add=%08x and size=%d\n",intptr,sizeof(int )*5);
 

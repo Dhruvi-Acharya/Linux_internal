@@ -21,16 +21,16 @@ int main(void)
 	pthread_t tid,tid1;
 //	getchar();
 	
-	pthread_create(&tid,NULL,start_one,NULL);
+	pthread_create(&tid,NULL,start_one,NULL); 
 
 	pthread_create(&tid1,NULL,start_two,NULL);
 
 	//getchar();
+printf("hi");
+	//sleep(2);
+	//pthread_join(tid1,NULL); //make parent to wait to execute 
 
-//	sleep(2);
-	pthread_join(tid,NULL); //make parent to wait to execute 
-
-	pthread_join(tid1,NULL);
+	//pthread_join(tid,NULL);
 
 	printf("Execution end of main thraed\n");
 	return 0;

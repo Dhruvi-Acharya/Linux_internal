@@ -14,9 +14,10 @@ int main()
 {
 	pthread_attr_t Attr;
 	pthread_t id;
+	
 	void *stk;
 	size_t size;
-	int err;
+	//int err;
 
 	size_t my_stksize = 0x3000000;
 	void *my_stack;

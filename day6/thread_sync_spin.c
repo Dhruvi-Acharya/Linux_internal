@@ -1,3 +1,5 @@
+// synchronization between process and thread
+
 #include<stdio.h>
 #include<pthread.h>
 #include<stdlib.h>
@@ -17,7 +19,7 @@ void *spinlockThread(void *i)
 
 	printf("Entered thread %d, getting spin lock \n",(int *)1);
 
-	rc=pthread_spin_lock(&slock);
+	rc=pthread_spin_lock(&slock); // after parent unlock thread apply lock
 
 	printf("%d Thread unlock the spin lock\n",(int *)1);
 

@@ -24,6 +24,6 @@ int main(void)
 	printf("Thread id: %u\n",tid);
 
 //	sleep(2);
-	pthread_join(tid,NULL); //make parent to wait to execute 
+	//pthread_join(tid,NULL); //make parent to wait to execute 
 	return 0;
 }

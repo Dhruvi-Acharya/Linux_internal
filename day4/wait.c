@@ -10,7 +10,7 @@ int main()
 	if(pid1==0)
 	{
 		sleep(5);
-		printf("i am child with delay of 5 sec and my child peo pid=%d\n",getpid());
+		printf("i am child with delay of 5 sec and my child process pid=%d\n",getpid());
 	}
 	else
 	{

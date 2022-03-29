@@ -11,6 +11,7 @@ int main()
 	{
 		printf("child process %d\n",getpid());
 	  execl("/home/dhruvi/Linux_internal/day4/exectest_cmd_line","./exectest_cmd_line","aa","bb","cc",NULL);
+
 	  //bin/ls ls null
 	}
 	else
