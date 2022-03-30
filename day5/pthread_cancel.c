@@ -10,11 +10,14 @@ void* thread1(void *arg)
 
 int main(void)
 {
-	int ret = pthread_create(&tid,NULL,thread1,NULL);
+	//int ret = 
+	pthread_create(&tid,NULL,thread1,NULL);
 	int t=0;
 
 	printf("Thread id: %u\n",tid);
 	sleep(6);
+
+	printf("id: %u\n",tid);
 
 	t=pthread_cancel(tid);
 
