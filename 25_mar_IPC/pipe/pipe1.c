@@ -1,9 +1,9 @@
 // shows how pipe can be used
-
+#include<stdlib.h>
 #include<unistd.h>
 #include<stdio.h>
 
-main(){
+int main(){
 	int fds[2];
 	int res,i;
 	char *buf1="aaaaaaaaaaaaaaaaaaaa";
@@ -20,10 +20,13 @@ main(){
 
 	write(fds[1],buf1,20);
 	write(fds[1],buf,20);
+	
 	read(fds[0],buf2,40);
 
 	for(i=0;i<40;i++)
 		printf("%c",buf2[i]);
 
 	printf("\n");
+
+	return 0;
 }

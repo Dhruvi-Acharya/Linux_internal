@@ -38,14 +38,11 @@ int main()
 	
 	t2.id=2;
 	strcpy(t2.msg,"Second thread\n");
-	//t2.msg="Thread2";
-
-//	thread_id = pthread_self();
+	
 	printf("Main\n");
 
 	pthread_create(&thread1,NULL,threadTask,(void *)&t1);
 	pthread_create(&thread2,NULL,threadTask,(void *)&t2);
-//	pthread_create(&thread2,NULL,printHello,(void *)&t2);
 
 	pthread_join(thread1,NULL);
 	pthread_join(thread2,NULL);
