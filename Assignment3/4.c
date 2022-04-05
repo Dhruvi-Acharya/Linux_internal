@@ -14,6 +14,8 @@ int main()
 
 	ret = pthread_getschedparam(pthread_self(),&policy,&param); // get default priority and policy
 
+	//printf("param: %d\n",policy);
+
 	if(ret !=0)
 		perror("getschedparam\n");
 

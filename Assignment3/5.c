@@ -46,11 +46,13 @@ int main()
 
 	rc=pthread_create(&t1,NULL,spinlockThread,(int *)1);
 
+
 	printf("main wait a bit holding the spin lock\n");
 	
 	sleep(5);
 
 	printf("Main now unlock the spin lock\n");
+
 	
 	rc=pthread_spin_unlock(&slock); // main release lock
 
